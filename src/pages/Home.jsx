@@ -9,10 +9,13 @@ import Planet3 from "../assets/planats/planet3.png";
 import Planet4 from "../assets/planats/planet4.png";
 import Planet5 from "../assets/planats/planet5.png";
 import ExoButton from "../components/ExoButton";
+import Navbar from "../components/Navbar";
 
 export const Home = () => {
   return (
     <Main>
+      <Navbar />
+
       <Container>
         <LeftSection>
           <PlayCard>

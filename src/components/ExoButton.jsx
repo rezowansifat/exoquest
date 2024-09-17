@@ -6,7 +6,7 @@ const ExoButton = ({ name, navigateTo }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(navigateTo); // Navigate to the provided path
+    navigate(navigateTo);
   };
 
   return <Button onClick={handleClick}>{name}</Button>;

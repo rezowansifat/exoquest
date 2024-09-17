@@ -41,7 +41,7 @@ const ExoDrawer = ({ open, toggleDrawer }) => {
         sx: {
           backgroundImage: `url(${Logo})`,
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "10% center",
+          backgroundPosition: "12% center",
 
           animation: "slideIn 2s ease-out 2s",
         },
@@ -119,7 +119,7 @@ const ManuItem = styled.div`
   justify-content: center;
   border: 1px solid rgba(168, 184, 201, 1);
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background: rgba(86, 106, 134, 255);
   cursor: pointer;
   p {

@@ -29,7 +29,7 @@ export const Home = () => {
               </h2>
             </TitleBox>
             <ButtonBox>
-              <ExoButton name="Play" navigateTo="/" />
+              <ExoButton name="Play" navigateTo="/map" />
             </ButtonBox>
           </PlayCard>
           <LearnCard>
@@ -115,7 +115,7 @@ const PlayCard = styled.div`
   background: linear-gradient(360deg, #566a86 -6.77%, #142b4d 52.37%);
   border: 1px solid #a8b8c9;
   width: 70%;
-  height: 280px;
+  height: 200px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -160,7 +160,7 @@ const LearnCard = styled.div`
   background: linear-gradient(360deg, #566a86 -6.77%, #142b4d 52.37%);
   border: 1px solid #a8b8c9;
   width: 70%;
-  height: 280px;
+  height: 200px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -217,12 +217,12 @@ const TitleBox = styled.div`
   flex: 2;
 
   h2 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 400;
     text-align: left;
     margin: 0;
     padding: 0;
-    line-height: 40px;
+    line-height: 45px;
   }
 `;
 

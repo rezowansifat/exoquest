@@ -22,6 +22,7 @@ const Button = styled.button`
   background: #454858;
   border: 1px solid #a8b8c9;
   box-shadow: 0px 4px 12.2px 0px rgba(168, 184, 201, 0.3);
+  color: #fff;
 `;
 
 export default ExoButton;

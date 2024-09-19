@@ -8,6 +8,7 @@
   border: none;
   outline: none;
   text-decoration: none;
+  color: #fff;
 }
 :root {
   font-family: ISOCPEUR, system-ui, Avenir, Helvetica, Arial, sans-serif;

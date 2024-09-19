@@ -42,7 +42,7 @@ const ExoDrawer = ({ open, toggleDrawer }) => {
           backgroundImage: `url(${Logo})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "12% center",
-
+          backgroundSize: "400px",
           animation: "slideIn 2s ease-out 2s",
         },
       }}
@@ -115,7 +115,7 @@ const ManuBox = styled.div`
 
 const ManuItem = styled.div`
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;

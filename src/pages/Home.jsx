@@ -217,6 +217,7 @@ const TitleBox = styled.div`
   flex: 2;
 
   h2 {
+    color: #fff;
     font-size: 40px;
     font-weight: 400;
     text-align: left;

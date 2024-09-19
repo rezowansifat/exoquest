@@ -72,7 +72,7 @@ const ExoDrawer = ({ open, toggleDrawer }) => {
 const Container = styled.div`
   width: 770px;
   padding: 20px;
-  height: 100%;
+  height: 100vh;
   background: rgba(61, 77, 100, 1);
 `;
 
@@ -110,16 +110,18 @@ const ManuItems = styled.div`
 
 const ManuBox = styled.div`
   width: 100%;
+  height: 100%;
 `;
 
 const ManuItem = styled.div`
   width: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(168, 184, 201, 1);
   border-radius: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   background: rgba(86, 106, 134, 255);
   cursor: pointer;
   p {

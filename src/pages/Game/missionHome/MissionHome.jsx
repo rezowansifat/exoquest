@@ -27,7 +27,7 @@ const MissionHome = () => {
         <Content>
           <MissonCard>
             <img src={RedDawnExploration} alt="Mission 1" />
-            <Button>
+            <Button className="unlock">
               Mission 1 <ArrowCircleRightOutlinedIcon />
             </Button>
           </MissonCard>
@@ -44,10 +44,6 @@ const MissionHome = () => {
             </Button>
           </MissonCard>
         </Content>
-
-        <ExoBot>
-          <img src={boticon} />
-        </ExoBot>
       </Container>
     </Main>
   );
@@ -97,7 +93,9 @@ const MissonCard = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  .unlock {
+    background: #566a86;
+  }
   img {
     max-width: 250px;
     transition: transform 0.3s ease;
@@ -133,29 +131,6 @@ const Button = styled.div`
 
   &:hover {
     background: #454858;
-  }
-`;
-
-const ExoBot = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  img {
-    width: 40px;
-    transition: transform 0.2s ease;
-    animation: scaleAnimation 2s infinite ease-in-out; /* Apply the animation */
-    @keyframes scaleAnimation {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
   }
 `;
 

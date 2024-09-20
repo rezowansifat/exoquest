@@ -10,6 +10,7 @@ import Planet4 from "../assets/planats/planet4.png";
 import Planet5 from "../assets/planats/planet5.png";
 import ExoButton from "../components/ExoButton";
 import Navbar from "../components/Navbar";
+import ExoBot from "../components/ExoBot/ExoBot";
 
 export const Home = () => {
   return (
@@ -54,6 +55,7 @@ export const Home = () => {
         </LeftSection>
         <RightSection>
           <LogoImage src={Logo} alt="Logo" />
+          <ExoBot />
         </RightSection>
       </Container>
     </Main>
@@ -218,7 +220,7 @@ const TitleBox = styled.div`
 
   h2 {
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     text-align: left;
     margin: 0;

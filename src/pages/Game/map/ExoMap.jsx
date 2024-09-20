@@ -10,6 +10,7 @@ import { kepler186f } from "../../../assets/games/ExoPlanets";
 import GameNav from "../../../components/GameNav";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { useNavigate } from "react-router-dom";
+import Logo from "./map-images/logo.png";
 
 const ExoMap = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const ExoMap = () => {
     <>
       <GameNav />
       <div className="main">
-        <img className="logo" src="src/pages/Game/map/map-images/logo.png" />
+        <img className="logo" src={Logo} />
         <div className="trappist-outline">
           <div className="trappist">
             <div className="t-lock"></div>

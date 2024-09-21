@@ -8,8 +8,10 @@ import CrimsonAscent from "../../../assets/games/missionHome/Crimson-Ascent.png"
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 import GameNav from "../../../components/GameNav";
+import { useNavigate } from "react-router-dom";
 
 const MissionHome = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => {
@@ -26,8 +28,12 @@ const MissionHome = () => {
         </Headline>
         <Content>
           <MissonCard>
-            <img src={RedDawnExploration} alt="Mission 1" />
-            <Button className="unlock">
+            <img
+              src={RedDawnExploration}
+              alt="Mission 1"
+              onClick={() => navigate("/redwelcome")}
+            />
+            <Button className="unlock" onClick={() => navigate("/redwelcome")}>
               Mission 1 <ArrowCircleRightOutlinedIcon />
             </Button>
           </MissonCard>

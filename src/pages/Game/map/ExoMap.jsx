@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ExoMap.css";
 import { Ellipse } from "../../../assets/games/ExoPlanets";
 import { kepler442b } from "../../../assets/games/ExoPlanets";
@@ -15,12 +15,18 @@ import Logo from "./map-images/logo.png";
 const ExoMap = () => {
   const navigate = useNavigate();
 
+  const [open, setOpen] = useState(false);
+
+  const toggleDrawer = (newOpen) => {
+    setOpen(newOpen);
+  };
+
   const handleNavigate = () => {
     navigate("/missionhome");
   };
   return (
-    <>
-      <GameNav />
+    <div>
+      <GameNav open={open} toggleDrawer={toggleDrawer} />
       <div className="main">
         <img className="logo" src={Logo} />
         <div className="trappist-outline">
@@ -66,7 +72,7 @@ const ExoMap = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

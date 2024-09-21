@@ -11,7 +11,7 @@ import botIcon from "../assets/games/Exobot/chat-bot.png";
 import ExoBot from "./ExoBot/ExoBot";
 import { useNavigate } from "react-router-dom";
 
-const GameNav = ({ open, toggleDrawer }) => {
+const GameNav = ({ open, toggleDrawer, pluscoin }) => {
   const navigate = useNavigate();
 
   const [isExoBotVisible, setIsExoBotVisible] = useState(false);
@@ -21,8 +21,11 @@ const GameNav = ({ open, toggleDrawer }) => {
   };
 
   const handleGoBack = () => {
-    navigate(-1); // Go back to the previous route
+    navigate(-1);
   };
+
+  const totalCoins = 100 + (pluscoin || 0);
+
   return (
     <>
       <NavWrapper>
@@ -31,7 +34,7 @@ const GameNav = ({ open, toggleDrawer }) => {
           <NavRigt>
             <Stats>
               <img src={Coin} alt="coin" />
-              <p>100</p>
+              <p>{totalCoins}</p>
             </Stats>
             <Stats>
               <img src={Dimond} alt="diamond" />

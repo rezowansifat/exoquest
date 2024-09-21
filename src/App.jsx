@@ -7,6 +7,8 @@ import ExoBot from "./components/ExoBot/ExoBot";
 import ExoMap from "./pages/Game/map/ExoMap";
 import Redwelcome from "./pages/Game/redDawnExploration/Redwelcome";
 import RedMissions from "./pages/Game/redDawnExploration/RedMissions";
+import CosmicSearch from "./pages/Game/cosmicSearch/CosmicSearch";
+import CosmicWelcome from "./pages/Game/cosmicSearch/CosmicWelcome";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="/bot" element={<ExoBot />} />
         <Route path="/redwelcome" element={<Redwelcome />} />
         <Route path="/redlevel1" element={<RedMissions />} />
+        <Route path="/cosmicwelcome" element={<CosmicWelcome />} />
+        <Route path="/cosmicsearch" element={<CosmicSearch />} />
       </Routes>
     </>
   );

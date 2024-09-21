@@ -55,7 +55,7 @@ const RedMissions = () => {
                   <img
                     src={lavle1}
                     alt="lavle1"
-                    onClick={() => navigate("/redwelcome")}
+                    onClick={() => navigate("/cosmicwelcome")}
                   />
                   <p>Cosmic Search</p>
                 </MissonCard>

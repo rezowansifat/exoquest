@@ -5,7 +5,7 @@ import GameNav from "../../../components/GameNav";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Redwelcome = () => {
+const RedWelcome = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -74,4 +74,4 @@ const WelcomeBox = styled(motion.div)`
   border-radius: 8px;
 `;
 
-export default Redwelcome;
+export default RedWelcome;

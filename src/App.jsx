@@ -9,6 +9,7 @@ import Redwelcome from "./pages/Game/redDawnExploration/Redwelcome";
 import RedMissions from "./pages/Game/redDawnExploration/RedMissions";
 import CosmicSearch from "./pages/Game/cosmicSearch/CosmicSearch";
 import CosmicWelcome from "./pages/Game/cosmicSearch/CosmicWelcome";
+import Puzzle from "./pages/Game/puzzle/Puzzle";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/redlevel1" element={<RedMissions />} />
         <Route path="/cosmicwelcome" element={<CosmicWelcome />} />
         <Route path="/cosmicsearch" element={<CosmicSearch />} />
+        <Route path="/puzzle" element={<Puzzle />} />
       </Routes>
     </>
   );

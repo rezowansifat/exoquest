@@ -10,6 +10,8 @@ import CosmicSearch from "./pages/Game/cosmicSearch/CosmicSearch";
 import CosmicWelcome from "./pages/Game/cosmicSearch/CosmicWelcome";
 import Puzzle from "./pages/Game/puzzle/Puzzle";
 import RedWelcome from "./pages/Game/redDawnExploration/RedWelcome";
+import WelcomeExoQuiz from "./pages/Game/ExoQuiz/welcomeExoQuiz";
+import ExoQuiz from "./pages/Game/ExoQuiz/ExoQuiz";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route path="/cosmicsearch" element={<CosmicSearch />} />
         <Route path="/puzzle" element={<Puzzle />} />
         <Route path="/redwelcome" element={<RedWelcome />} />
+        <Route path="/quizwelcome" element={<WelcomeExoQuiz />} />
+        <Route path="/exoquiz" element={<ExoQuiz />} />
       </Routes>
     </>
   );

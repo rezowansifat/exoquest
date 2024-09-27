@@ -129,7 +129,7 @@ const CosmicSearch = () => {
             {gameWon ? (
               <div>
                 <p>You've Earned 200 Coins!</p>
-                <button onClick={restartGame}>NEXT LEVEl</button>
+                <button onClick={() => navigate("/level-2")}>NEXT LEVEl</button>
               </div>
             ) : (
               <div>

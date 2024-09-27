@@ -15,7 +15,7 @@ const RedWelcome = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/redlevel1");
+      navigate("/level-1");
     }, 3000);
 
     return () => clearTimeout(timer);

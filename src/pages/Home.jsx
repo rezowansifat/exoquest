@@ -48,7 +48,7 @@ export const Home = () => {
               </h2>
             </TitleBox>
             <ButtonBox>
-              <ExoButton name="Learn" navigateTo="/exoquiz" />
+              <ExoButton name="Learn" navigateTo="/quizwelcome" />
             </ButtonBox>
           </LearnCard>
         </LeftSection>

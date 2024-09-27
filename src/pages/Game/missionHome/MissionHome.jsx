@@ -9,13 +9,21 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 import GameNav from "../../../components/GameNav";
 import { useNavigate } from "react-router-dom";
+import ExoButton from "../../../components/ExoButton";
 
 const MissionHome = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false); // State for the pop-up
+  const [popupMessage, setPopupMessage] = useState(""); // State for the pop-up message
 
   const toggleDrawer = (newOpen) => {
     setOpen(newOpen);
+  };
+
+  const handleLockedMission = (message) => {
+    setPopupMessage(message);
+    setShowPopup(true);
   };
 
   return (
@@ -38,18 +46,59 @@ const MissionHome = () => {
             </Button>
           </MissonCard>
           <MissonCard>
-            <img src={GenesisQuest} alt="Mission 2" />
-            <Button>
+            <img
+              src={GenesisQuest}
+              alt="Mission 2"
+              onClick={() =>
+                handleLockedMission(
+                  "First complete Mission 1 to play this mission."
+                )
+              }
+            />
+            <Button
+              onClick={() =>
+                handleLockedMission(
+                  "First complete Mission 1 to play this mission."
+                )
+              }
+            >
               Mission 2 <LockOutlinedIcon />
             </Button>
           </MissonCard>
           <MissonCard>
-            <img src={CrimsonAscent} alt="Mission 3" />
-            <Button>
+            <img
+              src={CrimsonAscent}
+              alt="Mission 3"
+              onClick={() =>
+                handleLockedMission(
+                  "First complete Mission 2 to play this mission."
+                )
+              }
+            />
+            <Button
+              onClick={() =>
+                handleLockedMission(
+                  "First complete Mission 2 to play this mission."
+                )
+              }
+            >
               Mission 3 <LockOutlinedIcon />
             </Button>
           </MissonCard>
         </Content>
+
+        {/* Pop-up component */}
+        {showPopup && (
+          <Popup>
+            <PopupContent>
+              <p>{popupMessage}</p>
+
+              <CloseButton onClick={() => setShowPopup(false)}>
+                Close
+              </CloseButton>
+            </PopupContent>
+          </Popup>
+        )}
       </Container>
     </Main>
   );
@@ -137,6 +186,54 @@ const Button = styled.div`
 
   &:hover {
     background: #454858;
+  }
+`;
+
+const Popup = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+`;
+
+const PopupContent = styled.div`
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(86, 106, 134, 0.69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const CloseButton = styled.button`
+  background: #454858;
+  border: 1px solid #a4bcbf69;
+  border-radius: 8px;
+  box-shadow: #a4bcbf69 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 300ms ease;
+  min-width: 150px;
+
+  &:hover {
+    box-shadow: none;
   }
 `;
 

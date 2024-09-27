@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import redbg from "../../../assets/games/redDawnExploration/redcleanbg.png";
-import GameNav from "../../../components/GameNav";
-import lavle1 from "../../../assets/games/redDawnExploration/Level1.png";
-import lavle2 from "../../../assets/games/redDawnExploration/Level2.png";
-import lavle3 from "../../../assets/games/redDawnExploration/Level3.png";
+import redbg from "../../../../assets/games/redDawnExploration/redcleanbg.png";
+import GameNav from "../../../../components/GameNav";
+import lavle1 from "../../../../assets/games/redDawnExploration/Level1.png";
+import lavle2 from "../../../../assets/games/redDawnExploration/Level2.png";
+import lavle3 from "../../../../assets/games/redDawnExploration/Level3.png";
+import LevelB2 from "../../../../assets/games/level/LevelB2.png";
+import LevelB3 from "../../../../assets/games/level/LevelB3.png";
+import Level4 from "../../../../assets/games/level/Level4.png";
+
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import ArrowCircleLeftOutlinedIcon from "@mui/icons-material/ArrowCircleLeftOutlined";
 import ArrowCircleRightOutlinedIcon from "@mui/icons-material/ArrowCircleRightOutlined";
 
-const RedMissions = () => {
+const Lavel3 = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [x, setX] = useState(0);
@@ -60,15 +64,23 @@ const RedMissions = () => {
                   <p>Cosmic Search</p>
                 </MissonCard>
                 <MissonCard>
-                  <img src={lavle2} alt="lavle2" />
-                  <p>Exo Grid</p>
-                </MissonCard>
-                <MissonCard>
-                  <img src={lavle3} alt="lavle3" />
+                  <img
+                    src={LevelB2}
+                    alt="Exo Quiz"
+                    onClick={() => navigate("/exoquiz")}
+                  />
                   <p>Exo Quiz</p>
                 </MissonCard>
                 <MissonCard>
-                  <img src={lavle3} alt="lavle3" />
+                  <img
+                    src={LevelB3}
+                    alt="lavle3"
+                    onClick={() => navigate("/exo-grid")}
+                  />
+                  <p>Exo Grid</p>
+                </MissonCard>
+                <MissonCard>
+                  <img src={Level4} alt="lavle3" />
                   <p>UFO Glide</p>
                 </MissonCard>
               </Content>
@@ -166,4 +178,4 @@ const ArrowRight = styled.div`
   z-index: 10;
 `;
 
-export default RedMissions;
+export default Lavel3;

@@ -1,24 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
-import quizbgfade from "../../../assets/games/ExoQuiz/quizbgfade.png";
-import GameNav from "../../../components/GameNav";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+
+import quizbg from "../../../assets/games/ExoQuiz/quizbg.png";
 import ExoButton from "../../../components/ExoButton";
 
 const WelcomeExoQuiz = () => {
-  const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
-
-  const toggleDrawer = (newOpen) => {
-    setOpen(newOpen);
-  };
-
   return (
     <Main>
-      <GameNav open={open} toggleDrawer={toggleDrawer} />
       <Container>
-        <h1>Exo Quiz</h1>
+        <h1>Exo Quiz </h1>
         <WelcomeBox
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -26,7 +17,9 @@ const WelcomeExoQuiz = () => {
         >
           <p>
             Exo Quiz is a quiz game to <br />
-            brainstorming your knowledge! <br />
+            brainstorming your
+            <br /> knowledge!
+            <br />
             <br />
             Are you ready?
           </p>
@@ -40,13 +33,14 @@ const WelcomeExoQuiz = () => {
 const Main = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(${quizbgfade});
+  background-image: url(${quizbg});
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 const Container = styled.div`
@@ -58,8 +52,7 @@ const Container = styled.div`
   flex-direction: column;
   z-index: 2;
   h1 {
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 45px;
   }
   p {
     font-size: 30px;
@@ -79,6 +72,7 @@ const WelcomeBox = styled(motion.div)`
   font-weight: bolder;
   border-radius: 8px;
   margin-bottom: 20px;
+  border: 1px solid #a8b8c9;
 `;
 
 export default WelcomeExoQuiz;

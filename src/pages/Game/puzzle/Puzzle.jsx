@@ -5,8 +5,10 @@ import Cards from "./components/Cards";
 import Popup from "./components/Popup";
 import puzzleBg from "../../../assets/games/puzzle/grid.png";
 import GameNav from "../../../components/GameNav";
+import { useNavigate } from "react-router-dom";
 
 const Puzzle = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [coins, setCoins] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
@@ -60,7 +62,7 @@ const Puzzle = () => {
 
   const handlePopupAction = (action) => {
     if (action === "Next Level") {
-      console.log("Go to next level!");
+      navigate("/level-4");
     } else if (action === "Restart") {
       window.location.reload();
     } else if (action === "Go to Learn") {

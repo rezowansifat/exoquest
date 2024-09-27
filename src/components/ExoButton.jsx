@@ -13,19 +13,26 @@ const ExoButton = ({ name, navigateTo }) => {
 };
 
 const Button = styled.button`
-  font-size: 20px;
-  font-weight: 400px;
-  width: 120px;
-  height: 45px;
-  gap: 0px;
-  border-radius: 10px;
   background: #454858;
-  border: 1px solid #a8b8c9;
-  box-shadow: 0px 4px 12.2px 0px rgba(168, 184, 201, 0.3);
-  color: #fff;
+  border: 1px solid #a4bcbf69;
+  border-radius: 8px;
+  box-shadow: #a4bcbf69 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  transition: all 300ms ease;
+  min-width: 150px;
+
+  &:hover {
+    box-shadow: none;
+  }
 `;
 
 export default ExoButton;

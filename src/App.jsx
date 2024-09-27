@@ -12,7 +12,7 @@ import RedWelcome from "./pages/Game/redDawnExploration/RedWelcome";
 import WelcomeExoQuiz from "./pages/Game/ExoQuiz/WelcomeExoQuiz";
 import ExoQuiz from "./pages/Game/ExoQuiz/ExoQuiz";
 import ResultScreen from "./pages/Game/ExoQuiz/ResultScreen";
-import Lavel1 from "./pages/Game/redDawnExploration/Lavels/lavel1";
+import Lavel1 from "./pages/Game/redDawnExploration/Lavels/Lavel1";
 import Lavel2 from "./pages/Game/redDawnExploration/Lavels/Lavel2";
 import Lavel3 from "./pages/Game/redDawnExploration/Lavels/Lavel3";
 import Lavel4 from "./pages/Game/redDawnExploration/Lavels/Lavel4";

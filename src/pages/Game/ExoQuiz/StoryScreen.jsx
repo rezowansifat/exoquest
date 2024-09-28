@@ -7,8 +7,9 @@ import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 import storybot from "../../../assets/games/ExoQuiz/icons8-bot-100.png";
 import { motion } from "framer-motion";
 
-const GEMINI_API_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyADeu7bJX9aVm-jQYKXTWDH3K4zOdDQAzU";
+const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${
+  import.meta.env.VITE_API_KEY
+}`;
 
 const StoryScreen = ({ planet, onProceed }) => {
   const [story, setStory] = useState("Loading story...");

@@ -20,13 +20,31 @@ const ExoQuiz = () => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [open, setOpen] = useState(false);
 
+  //FOR LOCAl
+  // useEffect(() => {
+  //   const fetchExoplanetData = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         "/api/TAP/sync?query=select+top+100+pl_name,hostname,disc_year,pl_orbper+from+ps&format=json"
+  //       );
+
+  //       const randomData = getRandomEntries(response.data, 5);
+  //       setExoplanetData(randomData);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       console.error("Error fetching exoplanet data:", error);
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchExoplanetData();
+  // }, []);
+
+  //FOR PRODUCTION
   useEffect(() => {
     const fetchExoplanetData = async () => {
       try {
-        const response = await axios.get(
-          "/api/TAP/sync?query=select+top+100+pl_name,hostname,disc_year,pl_orbper+from+ps&format=json"
-        );
-
+        const response = await axios.get("/api/fetchExoplanetData");
         const randomData = getRandomEntries(response.data, 5);
         setExoplanetData(randomData);
         setLoading(false);

@@ -12,15 +12,15 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../assets/pages/logo/ExoQuest.png";
 
 const navItems = [
-  { label: "HOME", icon: <HomeOutlinedIcon />, route: "/" },
-  { label: "Profile", icon: <PermIdentityOutlinedIcon />, route: "/profile" },
+  { label: "HOME", icon: <HomeOutlinedIcon />, route: "/home" },
+  { label: "Profile", icon: <PermIdentityOutlinedIcon />, route: "#" },
   {
     label: "Buy Coins",
     icon: <MonetizationOnOutlinedIcon />,
-    route: "/buy-coins",
+    route: "#",
   },
-  { label: "Event", icon: <DateRangeOutlinedIcon />, route: "/events" },
-  { label: "Settings", icon: <SettingsOutlinedIcon />, route: "/settings" },
+  { label: "Event", icon: <DateRangeOutlinedIcon />, route: "#" },
+  { label: "Settings", icon: <SettingsOutlinedIcon />, route: "#" },
 ];
 
 const ExoDrawer = ({ open, toggleDrawer }) => {

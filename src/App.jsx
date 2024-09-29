@@ -21,12 +21,14 @@ import Explore from "./pages/Explore/exploration/Explore";
 import Kepler186f from "./pages/Explore/exploration/Pages/kepler186f/Kepler186f";
 import Habitability from "./pages/Explore/exploration/Pages/kepler186f/Habitability";
 import Orbital from "./pages/Explore/exploration/Pages/kepler186f/Orbital";
+import Enter from "./pages/Enter";
 
 const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Enter />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/map" element={<ExoMap />} />
         <Route path="/missionhome" element={<MissionHome />} />
         <Route path="/bot" element={<ExoBot />} />

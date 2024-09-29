@@ -1,9 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-  git config credential.username username1
+For the Chronicles of Exoplanet Exploration challenge, our solution is ExoQuest, an educational gaming app that makes learning about exoplanets both fun and engaging. Players unlock missions with challenges like Cosmic Search (finding hidden objects), Exo Grid (memory matching), Exo Quiz (knowledge tests), and UFO Glider (response challenges). Powered by AI, our ExoBot guides users, providing NASA-sourced information in a visually engaging way. We're continuously expanding the app with more games and missions, making the wonders of exoplanets accessible to all.

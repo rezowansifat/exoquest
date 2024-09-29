@@ -16,6 +16,11 @@ import Lavel1 from "./pages/Game/redDawnExploration/Lavels/Lavel1";
 import Lavel2 from "./pages/Game/redDawnExploration/Lavels/Lavel2";
 import Lavel3 from "./pages/Game/redDawnExploration/Lavels/Lavel3";
 import Lavel4 from "./pages/Game/redDawnExploration/Lavels/Lavel4";
+import PlanetHub from "./pages/Explore/PlanetHub";
+import Explore from "./pages/Explore/exploration/Explore";
+import Kepler186f from "./pages/Explore/exploration/Pages/kepler186f/Kepler186f";
+import Habitability from "./pages/Explore/exploration/Pages/kepler186f/Habitability";
+import Orbital from "./pages/Explore/exploration/Pages/kepler186f/Orbital";
 
 const App = () => {
   return (
@@ -36,7 +41,11 @@ const App = () => {
         <Route path="/redwelcome" element={<RedWelcome />} />
         <Route path="/quizwelcome" element={<WelcomeExoQuiz />} />
 
-        <Route path="/playrout" element={<ResultScreen coins={60} />} />
+        <Route path="/planethub" element={<PlanetHub />} />
+        <Route path="/explor" element={<Explore />} />
+        <Route path="/kepler186f" element={<Kepler186f />} />
+        <Route path="/habitability" element={<Habitability />} />
+        <Route path="/orbital" element={<Orbital />} />
       </Routes>
     </>
   );

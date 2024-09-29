@@ -10,7 +10,6 @@ import Planet4 from "../assets/planats/planet4.png";
 import Planet5 from "../assets/planats/planet5.png";
 import ExoButton from "../components/ExoButton";
 import Navbar from "../components/Navbar";
-import ExoBot from "../components/ExoBot/ExoBot";
 
 export const Home = () => {
   return (
@@ -48,13 +47,12 @@ export const Home = () => {
               </h2>
             </TitleBox>
             <ButtonBox>
-              <ExoButton name="Learn" navigateTo="/quizwelcome" />
+              <ExoButton name="Explor" navigateTo="/explor" />
             </ButtonBox>
           </LearnCard>
         </LeftSection>
         <RightSection>
           <LogoImage src={Logo} alt="Logo" />
-          <ExoBot />
         </RightSection>
       </Container>
     </Main>

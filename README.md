@@ -43,7 +43,7 @@ is an engaging game that challenges users to match identical objects, testing th
 ![Screenshot Capture - 2024-10-02 - 00-39-02](https://github.com/user-attachments/assets/850f53a6-dd82-45da-bff3-a9c1a1931c24)
 
  - **AI PlanetHub**
-AI PlanetHub is an immersive **3D exoplanet exploration environment** that brings **NASA's Exoplanet Archive data** to life in a captivating space setting. Users can interactively explore various planets, and upon clicking on any planet**, AI-powered intelligence generates fascinating facts** about it, enhancing the learning experience.
+is an immersive **3D exoplanet exploration environment** that brings **NASA's Exoplanet Archive data** to life in a captivating space setting. Users can interactively explore various planets, and upon clicking on any planet**, AI-powered intelligence generates fascinating facts** about it, enhancing the learning experience.
 
 ![Screenshot Capture - 2024-10-02 - 01-15-30](https://github.com/user-attachments/assets/f6fd3cab-96b7-46aa-b7a8-7f140c4ef337)
 
